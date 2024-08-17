@@ -104,12 +104,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\User\OneDrive - 國立中山大學\應用程式\Visual Studio\Library\SDL2-2.30.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\MonkeyRun\MonkeyRun\headers;C:\Users\User\source\Library\SDL2-2.30.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\User\OneDrive - 國立中山大學\應用程式\Visual Studio\Library\SDL2-2.30.5\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\User\source\Library\SDL2-2.30.5\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -121,10 +121,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\User\source\Library\SDL2-2.30.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\User\source\repos\MonkeyRun\MonkeyRun\headers;C:\Users\User\source\Library\SDL2-2.30.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -132,26 +132,6 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Enemy.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="PathFinder.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerView.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="FPS_Analyzer.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="map.h" />
-    <ClInclude Include="PathFinder.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerView.h" />
-    <ClInclude Include="Sound.h" />
-    <ClInclude Include="Text.h" />
-  </ItemGroup>
   <ItemGroup>
     <Image Include="Creeper.png" />
     <Image Include="map.png" />
@@ -161,6 +141,26 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="minecraft_font.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Enemy.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Map.cpp" />
+    <ClCompile Include="src\PathFinder.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\PlayerView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\Enemy.h" />
+    <ClInclude Include="headers\FPS_Analyzer.h" />
+    <ClInclude Include="headers\Game.h" />
+    <ClInclude Include="headers\map.h" />
+    <ClInclude Include="headers\PathFinder.h" />
+    <ClInclude Include="headers\Player.h" />
+    <ClInclude Include="headers\PlayerView.h" />
+    <ClInclude Include="headers\Sound.h" />
+    <ClInclude Include="headers\Text.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

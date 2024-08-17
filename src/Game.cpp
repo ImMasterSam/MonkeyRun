@@ -102,9 +102,9 @@ void Game::clear()
 
 void Game::update()
 {	
-
+	
 	analyzer->frameEnd();
-
+	
 	map->update();
 	player->update(map);
 	enemy->update(map, player);
@@ -113,7 +113,7 @@ void Game::update()
 	gameTick++;
 	
 	analyzer->frameStart();
-
+	
 }
 
 void Game::render()
@@ -121,19 +121,19 @@ void Game::render()
 
 	SDL_SetRenderDrawColor(renderer, 100, 150, 255, 255);
 	SDL_RenderClear(renderer);
-
+	
 	view->renderOnScreen(enemy);
 
 	map->render();
 	view->renderOnMap(map);
 	player->renderOnMap(map);
 	enemy->renderOnMap(map);
-
+	
 	if (SHOW_FPS)
 	{
 		analyzer->render();
 	}
-
+	
 	SDL_RenderPresent(renderer);
 
 }
@@ -157,7 +157,7 @@ void Game::handleEvent()
 			// KeyBoard
 			case SDL_KEYDOWN:
 				switch (event.key.keysym.sym)
-				{
+				{	
 					case SDLK_ESCAPE:
 						running = false;
 						break;

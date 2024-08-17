@@ -44,11 +44,12 @@ class Text
 			displayWord = (char*)word;
 
 			dstRect.w = (int)strlen(displayWord) * (fontSize / 2);
-
+			
 			SDL_Surface* temp = TTF_RenderText_Blended(font, displayWord, fontColor);
+			SDL_DestroyTexture(fontTex);
 			fontTex = SDL_CreateTextureFromSurface(Game::renderer, temp);
 			SDL_FreeSurface(temp);
-
+			
 		}
 
 		void render()

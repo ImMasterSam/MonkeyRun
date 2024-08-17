@@ -18,58 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="map.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerView.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="FPS_Analyzer.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="PathFinder.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Text.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-    <ClInclude Include="Sound.h">
-      <Filter>標頭檔</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Map.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerView.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-    <ClCompile Include="PathFinder.cpp">
-      <Filter>資源檔</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Image Include="map.png">
       <Filter>圖片</Filter>
     </Image>
@@ -90,5 +38,57 @@
     <Font Include="minecraft_font.ttf">
       <Filter>來源檔案</Filter>
     </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Enemy.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Map.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PathFinder.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PlayerView.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\Enemy.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\FPS_Analyzer.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Game.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\map.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\PathFinder.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Player.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\PlayerView.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Sound.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Text.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
